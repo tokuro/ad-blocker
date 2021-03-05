@@ -47,7 +47,7 @@ The Domain Name _must_ be `null.zone.file` and the Serial Format _must_ be set a
 1. Navigate to the appropriate directory
     * `cd /usr/local/bin`
 1. Download the `ad-blocker.sh` script
-    * `sudo wget -O ad-blocker.sh "https://raw.githubusercontent.com/steventblack/ad-blocker/master/ad-blocker.sh"`
+    * `sudo wget -O ad-blocker.sh "https://raw.githubusercontent.com/tokuro/ad-blocker/master/ad-blocker.sh"`
 1. Change the owner and permissions of the script
     * `sudo chown root:root ad-blocker.sh`
     * `sudo chmod +x ad-blocker.sh`
