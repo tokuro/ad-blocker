@@ -24,7 +24,7 @@ This service requires the following skills:
 * Standard Unix tools (`sudo`, `chown`, `chmod`, `mv`, `cd`, `ls`, `wget`, `cat`, etc.)
 * Administration/root access to the Synology device
 
-These instructions have been verified as working on a Synology DS1513+ running DSM 6.1-15047 Update 2. 
+These instructions have been verified as working on a Synology DS218 running DSM 7.0-41222
 
 ## DNS Service Setup
 1. Log in as adminstrator to the Synology DSM (administration interface)
