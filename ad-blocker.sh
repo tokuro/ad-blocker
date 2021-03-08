@@ -111,7 +111,8 @@ apply_blacklist () {
     fi
 
     # domain not found, so append it to the list
-    echo "zone \"$Domain\" { type master; notify no;};" >> "$BlockList"
+    echo "zone \"$Domain\" { type master; notify no; file \"/var/packages/DNSServer/target/named/etc/zone/master/null.zone.file\"; };" >> "$BlockList"
+
 
   done < "$BlackList"
 }
