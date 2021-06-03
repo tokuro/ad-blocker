@@ -1,7 +1,9 @@
 # ad-blocker
 A simple ad-blocker for Synology devices
 
-This is a modified version of https://github.com/steventblack/ad-blocker to work on my DS218 running DSM 7.0 beta & RC
+This is a modified version of https://github.com/steventblack/ad-blocker to work on my DS218 running DSM 7.0 beta & RC.
+
+Also added YouTube ad blocking from https://gist.github.com/ErikFontanel/4ee1ab393b119690a293ba558976b113.  Just to make it simple, i am using black list for this.
 
 ## Background
 
