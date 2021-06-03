@@ -53,6 +53,13 @@ The Domain Name _must_ be `null.zone.file` and the Serial Format _must_ be set a
 1. Change the owner and permissions of the script
     * `sudo chown root:root ad-blocker.sh`
     * `sudo chmod +x ad-blocker.sh`
+    
+    sudo chmod a+rw U2bTemp.txt
+    sudo chmod a+rw /usr/local/etc/ad-blocker-bl.conf
+    sudo chmod a+rw /usr/local/etc/ad-blocker-wl.conf
+
+
+
 1. Verify the script executes properly
     * `sudo ./ad-blocker.sh`
     * Verify `/var/packages/DNSServer/target/named/etc/zone/data/ad-blocker.db` exists and has ~200k of data
