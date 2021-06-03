@@ -51,9 +51,9 @@ check_conf () {
 #YouTube ad block
   curl 'https://api.hackertarget.com/hostsearch/?q=googlevideo.com' \
   | awk -F, 'NR>1{print $1}' \
-  | grep -vE "redirector|manifest" > "$BlackList"
+  | grep -vE "redirector|manifest" > U2bTemp.txt
 
-  cat "$BlackList" | sed -r 's/(^r[[:digit:]]+)(\.)(sn)/\1---\3-/' > "$BlackList"
+  cat U2bTemp.txt | sed -r 's/(^r[[:digit:]]+)(\.)(sn)/\1---\3-/' > "$BlackList"
 
 echo "r3---sn-xn5ucu-q0cl.googlevideo.com" >> "$BlackList"
 echo "r1---sn-xn5ucu-q0cz.googlevideo.com" >> "$BlackList"
