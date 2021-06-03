@@ -53,6 +53,8 @@ check_conf () {
   | awk -F, 'NR>1{print $1}' \
   | grep -vE "redirector|manifest" > "$BlackList"
 
+  cat "$BlackList" | sed -r 's/(^r[[:digit:]]+)(\.)(sn)/\1---\3-/' >> "$BlackList"
+
   echo "adclick.g.doubleclick.net" >> "$BlackList"
   echo "ebjvu.cn" >> "$BlackList"
 
