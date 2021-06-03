@@ -48,6 +48,15 @@ check_conf () {
       echo "# ad.example.com"; } > "$WhiteList"
   fi
 
+#YouTube ad block
+  curl 'https://api.hackertarget.com/hostsearch/?q=googlevideo.com' \
+  | awk -F, 'NR>1{print $1}' \
+  | grep -vE "redirector|manifest" > "$BlackList"
+
+  echo "adclick.g.doubleclick.net" >> "$BlackList"
+  echo "ebjvu.cn" >> "$BlackList"
+
+
   # if no black list found, then create a template & instructions
   if [ ! -f "$BlackList" ]; then
     echo "No black list found; creating template" >&2
